@@ -1,0 +1,6 @@
+framework module RouterX {
+  umbrella header "RouterX-umbrella.h"
+
+  export *
+  module * { export * }
+}

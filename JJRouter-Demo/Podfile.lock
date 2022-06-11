@@ -1,0 +1,16 @@
+PODS:
+  - RouterX (0.1.0)
+
+DEPENDENCIES:
+  - RouterX
+
+SPEC REPOS:
+  trunk:
+    - RouterX
+
+SPEC CHECKSUMS:
+  RouterX: 0004b74c2accd9d29e74ba58d4e37773eaaad757
+
+PODFILE CHECKSUM: 6164c35220d267cd478f5f275594bc94960e0dac
+
+COCOAPODS: 1.11.3

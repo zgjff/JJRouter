@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E1E34FA285337C500F101E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E34F9285337C500F101E6 /* AppDelegate.swift */; };
+		5E1E34FE285337C500F101E6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E34FD285337C500F101E6 /* RootViewController.swift */; };
+		5E1E3503285337C600F101E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E3502285337C600F101E6 /* Assets.xcassets */; };
+		5E1E3506285337C600F101E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E3504285337C600F101E6 /* LaunchScreen.storyboard */; };
+		5E1E35102853380C00F101E6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E350D2853380C00F101E6 /* LICENSE */; };
+		5E1E35112853380C00F101E6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E350F2853380C00F101E6 /* README.md */; };
+		5E9A5D89285431C000CEAC9A /* JJRouterMatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D84285431C000CEAC9A /* JJRouterMatchResult.swift */; };
+		5E9A5D8A285431C000CEAC9A /* MatchedSameRouterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D85285431C000CEAC9A /* MatchedSameRouterAction.swift */; };
+		5E9A5D8B285431C000CEAC9A /* JJRouterDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D86285431C000CEAC9A /* JJRouterDestination.swift */; };
+		5E9A5D8C285431C000CEAC9A /* JJRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D87285431C000CEAC9A /* JJRouter.swift */; };
+		5E9A5D8D285431C000CEAC9A /* JJRouterSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D88285431C000CEAC9A /* JJRouterSource.swift */; };
+		5E9A5D922854373900CEAC9A /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D912854373900CEAC9A /* UIApplication+Extension.swift */; };
+		5E9A5D982854414600CEAC9A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D972854414600CEAC9A /* UIColor+Extension.swift */; };
+		5E9A5DA92854556C00CEAC9A /* AlertPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DA82854556C00CEAC9A /* AlertPresentationController.swift */; };
+		5E9A5DAB285455A200CEAC9A /* AlertPresentationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DAA285455A200CEAC9A /* AlertPresentationContext.swift */; };
+		5E9A5DAD285455C000CEAC9A /* AlertPresentationContext+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DAC285455C000CEAC9A /* AlertPresentationContext+Default.swift */; };
+		5E9A5DAF285455F000CEAC9A /* PushPopPresentDelegateTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DAE285455F000CEAC9A /* PushPopPresentDelegateTransition.swift */; };
+		5E9A5DC82854610600CEAC9A /* AlertCenterExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DC32854610600CEAC9A /* AlertCenterExampleController.swift */; };
+		5E9A5DC92854610600CEAC9A /* PushStylePresentExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DC42854610600CEAC9A /* PushStylePresentExampleController.swift */; };
+		5E9A5DCA2854610600CEAC9A /* SystemPresentExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DC52854610600CEAC9A /* SystemPresentExampleController.swift */; };
+		5E9A5DCB2854610600CEAC9A /* PushExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DC62854610600CEAC9A /* PushExampleController.swift */; };
+		5E9A5DCC2854610600CEAC9A /* SampleExampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DC72854610600CEAC9A /* SampleExampleRouter.swift */; };
+		5E9A5DCE2854618100CEAC9A /* BottomBlockExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DCD2854618100CEAC9A /* BottomBlockExampleController.swift */; };
+		5E9A5DD0285461C400CEAC9A /* BlockExampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DCF285461C400CEAC9A /* BlockExampleRouter.swift */; };
+		5E9A5DD22854660D00CEAC9A /* PassContextBlockExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DD12854660D00CEAC9A /* PassContextBlockExampleController.swift */; };
+		5E9A5DD428546A6900CEAC9A /* PassParametersExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DD328546A6900CEAC9A /* PassParametersExampleController.swift */; };
+		5E9A5DD628546CA800CEAC9A /* UrlRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DD528546CA800CEAC9A /* UrlRouter.swift */; };
+		5E9A5DD82854872500CEAC9A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5DD72854872500CEAC9A /* LoginController.swift */; };
+		C79ECC27DD10AF3C882BDA2D /* Pods_JJRouter_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83958FB22F4F9644ADDE34F /* Pods_JJRouter_Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E1E34F6285337C500F101E6 /* JJRouter-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJRouter-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1E34F9285337C500F101E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E1E34FD285337C500F101E6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5E1E3502285337C600F101E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E1E3505285337C600F101E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E1E3507285337C600F101E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E1E350D2853380C00F101E6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5E1E350F2853380C00F101E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5E9A5D84285431C000CEAC9A /* JJRouterMatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJRouterMatchResult.swift; sourceTree = "<group>"; };
+		5E9A5D85285431C000CEAC9A /* MatchedSameRouterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedSameRouterAction.swift; sourceTree = "<group>"; };
+		5E9A5D86285431C000CEAC9A /* JJRouterDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJRouterDestination.swift; sourceTree = "<group>"; };
+		5E9A5D87285431C000CEAC9A /* JJRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJRouter.swift; sourceTree = "<group>"; };
+		5E9A5D88285431C000CEAC9A /* JJRouterSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJRouterSource.swift; sourceTree = "<group>"; };
+		5E9A5D912854373900CEAC9A /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		5E9A5D972854414600CEAC9A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5E9A5DA82854556C00CEAC9A /* AlertPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationController.swift; sourceTree = "<group>"; };
+		5E9A5DAA285455A200CEAC9A /* AlertPresentationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationContext.swift; sourceTree = "<group>"; };
+		5E9A5DAC285455C000CEAC9A /* AlertPresentationContext+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertPresentationContext+Default.swift"; sourceTree = "<group>"; };
+		5E9A5DAE285455F000CEAC9A /* PushPopPresentDelegateTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPopPresentDelegateTransition.swift; sourceTree = "<group>"; };
+		5E9A5DC32854610600CEAC9A /* AlertCenterExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCenterExampleController.swift; sourceTree = "<group>"; };
+		5E9A5DC42854610600CEAC9A /* PushStylePresentExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushStylePresentExampleController.swift; sourceTree = "<group>"; };
+		5E9A5DC52854610600CEAC9A /* SystemPresentExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemPresentExampleController.swift; sourceTree = "<group>"; };
+		5E9A5DC62854610600CEAC9A /* PushExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushExampleController.swift; sourceTree = "<group>"; };
+		5E9A5DC72854610600CEAC9A /* SampleExampleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleExampleRouter.swift; sourceTree = "<group>"; };
+		5E9A5DCD2854618100CEAC9A /* BottomBlockExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBlockExampleController.swift; sourceTree = "<group>"; };
+		5E9A5DCF285461C400CEAC9A /* BlockExampleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockExampleRouter.swift; sourceTree = "<group>"; };
+		5E9A5DD12854660D00CEAC9A /* PassContextBlockExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassContextBlockExampleController.swift; sourceTree = "<group>"; };
+		5E9A5DD328546A6900CEAC9A /* PassParametersExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassParametersExampleController.swift; sourceTree = "<group>"; };
+		5E9A5DD528546CA800CEAC9A /* UrlRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRouter.swift; sourceTree = "<group>"; };
+		5E9A5DD72854872500CEAC9A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C83958FB22F4F9644ADDE34F /* Pods_JJRouter_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJRouter_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF866BF5BA3573C22FC2E77 /* Pods-JJRouter-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJRouter-Demo.debug.xcconfig"; path = "Target Support Files/Pods-JJRouter-Demo/Pods-JJRouter-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		F23B87AA4C84BFD6025B9974 /* Pods-JJRouter-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJRouter-Demo.release.xcconfig"; path = "Target Support Files/Pods-JJRouter-Demo/Pods-JJRouter-Demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E1E34F3285337C500F101E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79ECC27DD10AF3C882BDA2D /* Pods_JJRouter_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4096DE77B96E2740CECBF172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C83958FB22F4F9644ADDE34F /* Pods_JJRouter_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E1E34ED285337C500F101E6 = {
+			isa = PBXGroup;
+			children = (
+				5E1E350D2853380C00F101E6 /* LICENSE */,
+				5E1E350F2853380C00F101E6 /* README.md */,
+				5E1E350E2853380C00F101E6 /* Sources */,
+				5E1E34F8285337C500F101E6 /* JJRouter-Demo */,
+				5E1E34F7285337C500F101E6 /* Products */,
+				D9E8F8C64D22446A627DF018 /* Pods */,
+				4096DE77B96E2740CECBF172 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E1E34F7285337C500F101E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E34F6285337C500F101E6 /* JJRouter-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E1E34F8285337C500F101E6 /* JJRouter-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E34F9285337C500F101E6 /* AppDelegate.swift */,
+				5E9A5D972854414600CEAC9A /* UIColor+Extension.swift */,
+				5E1E34FD285337C500F101E6 /* RootViewController.swift */,
+				5E9A5DC72854610600CEAC9A /* SampleExampleRouter.swift */,
+				5E9A5DCF285461C400CEAC9A /* BlockExampleRouter.swift */,
+				5E9A5DD528546CA800CEAC9A /* UrlRouter.swift */,
+				5E9A5DC62854610600CEAC9A /* PushExampleController.swift */,
+				5E9A5DC52854610600CEAC9A /* SystemPresentExampleController.swift */,
+				5E9A5DC42854610600CEAC9A /* PushStylePresentExampleController.swift */,
+				5E9A5DC32854610600CEAC9A /* AlertCenterExampleController.swift */,
+				5E9A5DCD2854618100CEAC9A /* BottomBlockExampleController.swift */,
+				5E9A5DD12854660D00CEAC9A /* PassContextBlockExampleController.swift */,
+				5E9A5DD328546A6900CEAC9A /* PassParametersExampleController.swift */,
+				5E9A5DD72854872500CEAC9A /* LoginController.swift */,
+				5E1E3502285337C600F101E6 /* Assets.xcassets */,
+				5E1E3504285337C600F101E6 /* LaunchScreen.storyboard */,
+				5E1E3507285337C600F101E6 /* Info.plist */,
+			);
+			path = "JJRouter-Demo";
+			sourceTree = "<group>";
+		};
+		5E1E350E2853380C00F101E6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5E9A5D83285431C000CEAC9A /* JJRouter */,
+				5E9A5D9B28544A8600CEAC9A /* AlertPresentation */,
+				5E9A5D8E2854368A00CEAC9A /* Extension */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		5E9A5D83285431C000CEAC9A /* JJRouter */ = {
+			isa = PBXGroup;
+			children = (
+				5E9A5D87285431C000CEAC9A /* JJRouter.swift */,
+				5E9A5D88285431C000CEAC9A /* JJRouterSource.swift */,
+				5E9A5D86285431C000CEAC9A /* JJRouterDestination.swift */,
+				5E9A5D84285431C000CEAC9A /* JJRouterMatchResult.swift */,
+				5E9A5D85285431C000CEAC9A /* MatchedSameRouterAction.swift */,
+			);
+			path = JJRouter;
+			sourceTree = "<group>";
+		};
+		5E9A5D8E2854368A00CEAC9A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5E9A5D912854373900CEAC9A /* UIApplication+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5E9A5D9B28544A8600CEAC9A /* AlertPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				5E9A5DA82854556C00CEAC9A /* AlertPresentationController.swift */,
+				5E9A5DAA285455A200CEAC9A /* AlertPresentationContext.swift */,
+				5E9A5DAC285455C000CEAC9A /* AlertPresentationContext+Default.swift */,
+				5E9A5DAE285455F000CEAC9A /* PushPopPresentDelegateTransition.swift */,
+			);
+			path = AlertPresentation;
+			sourceTree = "<group>";
+		};
+		D9E8F8C64D22446A627DF018 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFF866BF5BA3573C22FC2E77 /* Pods-JJRouter-Demo.debug.xcconfig */,
+				F23B87AA4C84BFD6025B9974 /* Pods-JJRouter-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E1E34F5285337C500F101E6 /* JJRouter-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1E350A285337C600F101E6 /* Build configuration list for PBXNativeTarget "JJRouter-Demo" */;
+			buildPhases = (
+				56B1F5896C51024A6B63C457 /* [CP] Check Pods Manifest.lock */,
+				5E1E34F2285337C500F101E6 /* Sources */,
+				5E1E34F3285337C500F101E6 /* Frameworks */,
+				5E1E34F4285337C500F101E6 /* Resources */,
+				3829097E914F9271B183D75C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JJRouter-Demo";
+			productName = "JJRouter-Demo";
+			productReference = 5E1E34F6285337C500F101E6 /* JJRouter-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E1E34EE285337C500F101E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5E1E34F5285337C500F101E6 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5E1E34F1285337C500F101E6 /* Build configuration list for PBXProject "JJRouter-Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E1E34ED285337C500F101E6;
+			productRefGroup = 5E1E34F7285337C500F101E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E1E34F5285337C500F101E6 /* JJRouter-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E1E34F4285337C500F101E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1E3506285337C600F101E6 /* LaunchScreen.storyboard in Resources */,
+				5E1E3503285337C600F101E6 /* Assets.xcassets in Resources */,
+				5E1E35112853380C00F101E6 /* README.md in Resources */,
+				5E1E35102853380C00F101E6 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3829097E914F9271B183D75C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJRouter-Demo/Pods-JJRouter-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJRouter-Demo/Pods-JJRouter-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JJRouter-Demo/Pods-JJRouter-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56B1F5896C51024A6B63C457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJRouter-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E1E34F2285337C500F101E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9A5DD22854660D00CEAC9A /* PassContextBlockExampleController.swift in Sources */,
+				5E9A5DAB285455A200CEAC9A /* AlertPresentationContext.swift in Sources */,
+				5E9A5DAD285455C000CEAC9A /* AlertPresentationContext+Default.swift in Sources */,
+				5E9A5DC92854610600CEAC9A /* PushStylePresentExampleController.swift in Sources */,
+				5E9A5DC82854610600CEAC9A /* AlertCenterExampleController.swift in Sources */,
+				5E1E34FE285337C500F101E6 /* RootViewController.swift in Sources */,
+				5E9A5DCC2854610600CEAC9A /* SampleExampleRouter.swift in Sources */,
+				5E9A5DCA2854610600CEAC9A /* SystemPresentExampleController.swift in Sources */,
+				5E9A5DD0285461C400CEAC9A /* BlockExampleRouter.swift in Sources */,
+				5E9A5DA92854556C00CEAC9A /* AlertPresentationController.swift in Sources */,
+				5E9A5D982854414600CEAC9A /* UIColor+Extension.swift in Sources */,
+				5E9A5DCB2854610600CEAC9A /* PushExampleController.swift in Sources */,
+				5E9A5D8A285431C000CEAC9A /* MatchedSameRouterAction.swift in Sources */,
+				5E9A5DD82854872500CEAC9A /* LoginController.swift in Sources */,
+				5E9A5D89285431C000CEAC9A /* JJRouterMatchResult.swift in Sources */,
+				5E9A5DD628546CA800CEAC9A /* UrlRouter.swift in Sources */,
+				5E1E34FA285337C500F101E6 /* AppDelegate.swift in Sources */,
+				5E9A5D8C285431C000CEAC9A /* JJRouter.swift in Sources */,
+				5E9A5D8D285431C000CEAC9A /* JJRouterSource.swift in Sources */,
+				5E9A5DAF285455F000CEAC9A /* PushPopPresentDelegateTransition.swift in Sources */,
+				5E9A5D922854373900CEAC9A /* UIApplication+Extension.swift in Sources */,
+				5E9A5D8B285431C000CEAC9A /* JJRouterDestination.swift in Sources */,
+				5E9A5DCE2854618100CEAC9A /* BottomBlockExampleController.swift in Sources */,
+				5E9A5DD428546A6900CEAC9A /* PassParametersExampleController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E1E3504285337C600F101E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E1E3505285337C600F101E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E1E3508285337C600F101E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E1E3509285337C600F101E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E1E350B285337C600F101E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF866BF5BA3573C22FC2E77 /* Pods-JJRouter-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JJRouter-Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zgj.JJRouter-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E1E350C285337C600F101E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23B87AA4C84BFD6025B9974 /* Pods-JJRouter-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JJRouter-Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zgj.JJRouter-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E1E34F1285337C500F101E6 /* Build configuration list for PBXProject "JJRouter-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1E3508285337C600F101E6 /* Debug */,
+				5E1E3509285337C600F101E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E1E350A285337C600F101E6 /* Build configuration list for PBXNativeTarget "JJRouter-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1E350B285337C600F101E6 /* Debug */,
+				5E1E350C285337C600F101E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E1E34EE285337C500F101E6 /* Project object */;
+}
