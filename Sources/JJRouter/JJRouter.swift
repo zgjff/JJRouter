@@ -9,6 +9,10 @@ import Foundation
 import RouterX
 import UIKit
 
+protocol AAA: Hashable, Equatable {
+    
+}
+
 /// 路由管理
 public final class JJRouter {
     public typealias MatchedHandler = (MatchResult) -> Void
@@ -26,7 +30,8 @@ public final class JJRouter {
     
     private let core: RouterXCore = RouterXCore()
     private let defaultUnmatchHandler: UnmatchHandler?
-
+    // 替换routerx
+//    private var todoHandlerMappings: [AAA: MatchedHandler] = [:]
     private var handlerMappings: [PatternIdentifier: MatchedHandler] = [:]
     public init(defaultUnmatchHandler: UnmatchHandler? = nil) {
         self.defaultUnmatchHandler = defaultUnmatchHandler
@@ -60,10 +65,12 @@ extension JJRouter {
     /// - Returns: 匹配结果
     @discardableResult
     func open<T>(_ source: T, context: Any? = nil, unmatchHandler: UnmatchHandler? = nil) -> JJRouter.MatchResult? where T: JJRouterSource {
+        // 在这里做区别
+        print("open  source---------------", source)
         return open(source.routerPattern, context: context, unmatchHandler: unmatchHandler)
     }
     
-    /// 匹配泛型`path`并跳转路由
+    /// 匹配`path`并跳转路由
     /// - Parameters:
     ///   - source: 路由来源
     ///   - context: 传递给匹配到的路由界面数据
@@ -76,7 +83,7 @@ extension JJRouter {
         return open(url, context: context, unmatchHandler: unmatchHandler)
     }
     
-    /// 匹配泛型`URL`并跳转路由
+    /// 匹配`URL`并跳转路由
     /// - Parameters:
     ///   - source: 路由来源
     ///   - context: 传递给匹配到的路由界面数据

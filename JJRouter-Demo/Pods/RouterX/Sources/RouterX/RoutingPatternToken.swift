@@ -53,7 +53,6 @@ extension RoutingPatternToken: CustomStringConvertible, CustomDebugStringConvert
 }
 
 extension RoutingPatternToken: Hashable {
-
     func hash(into hasher: inout Hasher) {
         hasher.combine(description)
     }

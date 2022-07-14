@@ -22,7 +22,7 @@ extension AlertCenterExampleController: JJRouterDestination {
         }
         let pd = AlertPresentationController(show: self, from: tvc) { ctx in
             ctx.usingBlurBelowCoverAnimators()
-            ctx.presentationWrappingView = AlertPresentationContext.Default.allRoundedCornerWrappingView
+            ctx.presentationWrappingView = AlertPresentationContext.Default.allRoundedCornerWrappingView(10)
         }
         transitioningDelegate = pd
         tvc.present(self, animated: true) {

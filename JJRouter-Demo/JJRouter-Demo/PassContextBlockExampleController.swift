@@ -50,7 +50,7 @@ extension PassContextBlockExampleController: JJRouterDestination {
             ctx.usingClearCoverAnimators()
             if fromBottom {
                 ctx.usingBottomPresentation()
-                ctx.presentationWrappingView = AlertPresentationContext.Default.topRoundedCornerWrappingView
+                ctx.presentationWrappingView = AlertPresentationContext.Default.topRoundedCornerWrappingView(10)
             }
         }
         transitioningDelegate = pd

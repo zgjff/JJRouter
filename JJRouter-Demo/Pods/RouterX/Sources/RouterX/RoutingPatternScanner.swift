@@ -31,25 +31,30 @@ internal struct RoutingPatternScanner {
         var appending = ""
         var result: [RoutingPatternToken] = pattern.reduce(into: []) { box, char in
             guard let terminator = _PatternScanTerminator(rawValue: char) else {
+                print("RouterXCore  register z:", char)
                 appending.append(char)
                 return
             }
 
             let jointFragment = terminator.jointFragment
+            print("RouterXCore  register a:", jointFragment)
             defer {
                 if let token = jointFragment.token {
                     box.append(token)
                 }
                 appending = jointFragment.fragment
+                print("RouterXCore  register d:", appending)
             }
-
+            print("RouterXCore  register b:", appending)
             guard let jointToken = _generateToken(expression: appending) else { return }
+            print("RouterXCore  register c:", jointToken)
             box.append(jointToken)
         }
-
+        print("RouterXCore  register e:", appending)
         if let tailToken = _generateToken(expression: appending) {
             result.append(tailToken)
         }
+        print("RouterXCore  register f:", result)
         return result
     }
 

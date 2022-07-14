@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0160AD2880036000E890FC /* RoutingPatternToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0160A72880036000E890FC /* RoutingPatternToken.swift */; };
+		5E0160AE2880036000E890FC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0160A82880036000E890FC /* Router.swift */; };
+		5E0160AF2880036000E890FC /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0160A92880036000E890FC /* Scanner.swift */; };
+		5E0160B02880036000E890FC /* PatternTokenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0160AA2880036000E890FC /* PatternTokenBuilder.swift */; };
+		5E0160B12880036000E890FC /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0160AB2880036000E890FC /* RouterManager.swift */; };
+		5E0160B22880036000E890FC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0160AC2880036000E890FC /* Route.swift */; };
 		5E1E34FA285337C500F101E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E34F9285337C500F101E6 /* AppDelegate.swift */; };
 		5E1E34FE285337C500F101E6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E34FD285337C500F101E6 /* RootViewController.swift */; };
 		5E1E3503285337C600F101E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E3502285337C600F101E6 /* Assets.xcassets */; };
 		5E1E3506285337C600F101E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E3504285337C600F101E6 /* LaunchScreen.storyboard */; };
 		5E1E35102853380C00F101E6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E350D2853380C00F101E6 /* LICENSE */; };
 		5E1E35112853380C00F101E6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E350F2853380C00F101E6 /* README.md */; };
+		5E70EC252858615E00B1A751 /* GroupInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E70EC242858615E00B1A751 /* GroupInfoController.swift */; };
 		5E9A5D89285431C000CEAC9A /* JJRouterMatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D84285431C000CEAC9A /* JJRouterMatchResult.swift */; };
 		5E9A5D8A285431C000CEAC9A /* MatchedSameRouterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D85285431C000CEAC9A /* MatchedSameRouterAction.swift */; };
 		5E9A5D8B285431C000CEAC9A /* JJRouterDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A5D86285431C000CEAC9A /* JJRouterDestination.swift */; };
@@ -39,6 +46,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E0160A72880036000E890FC /* RoutingPatternToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingPatternToken.swift; sourceTree = "<group>"; };
+		5E0160A82880036000E890FC /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5E0160A92880036000E890FC /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		5E0160AA2880036000E890FC /* PatternTokenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternTokenBuilder.swift; sourceTree = "<group>"; };
+		5E0160AB2880036000E890FC /* RouterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
+		5E0160AC2880036000E890FC /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		5E1E34F6285337C500F101E6 /* JJRouter-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJRouter-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1E34F9285337C500F101E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E1E34FD285337C500F101E6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		5E1E3507285337C600F101E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1E350D2853380C00F101E6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5E1E350F2853380C00F101E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5E70EC242858615E00B1A751 /* GroupInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoController.swift; sourceTree = "<group>"; };
 		5E9A5D84285431C000CEAC9A /* JJRouterMatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJRouterMatchResult.swift; sourceTree = "<group>"; };
 		5E9A5D85285431C000CEAC9A /* MatchedSameRouterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedSameRouterAction.swift; sourceTree = "<group>"; };
 		5E9A5D86285431C000CEAC9A /* JJRouterDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJRouterDestination.swift; sourceTree = "<group>"; };
@@ -94,6 +108,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E0160A62880036000E890FC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5E0160A72880036000E890FC /* RoutingPatternToken.swift */,
+				5E0160A82880036000E890FC /* Router.swift */,
+				5E0160A92880036000E890FC /* Scanner.swift */,
+				5E0160AA2880036000E890FC /* PatternTokenBuilder.swift */,
+				5E0160AB2880036000E890FC /* RouterManager.swift */,
+				5E0160AC2880036000E890FC /* Route.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		5E1E34ED285337C500F101E6 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +158,7 @@
 				5E9A5DCD2854618100CEAC9A /* BottomBlockExampleController.swift */,
 				5E9A5DD12854660D00CEAC9A /* PassContextBlockExampleController.swift */,
 				5E9A5DD328546A6900CEAC9A /* PassParametersExampleController.swift */,
+				5E70EC242858615E00B1A751 /* GroupInfoController.swift */,
 				5E9A5DD72854872500CEAC9A /* LoginController.swift */,
 				5E1E3502285337C600F101E6 /* Assets.xcassets */,
 				5E1E3504285337C600F101E6 /* LaunchScreen.storyboard */,
@@ -142,6 +170,7 @@
 		5E1E350E2853380C00F101E6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5E0160A62880036000E890FC /* Router */,
 				5E9A5D83285431C000CEAC9A /* JJRouter */,
 				5E9A5D9B28544A8600CEAC9A /* AlertPresentation */,
 				5E9A5D8E2854368A00CEAC9A /* Extension */,
@@ -306,12 +335,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0160B02880036000E890FC /* PatternTokenBuilder.swift in Sources */,
 				5E9A5DD22854660D00CEAC9A /* PassContextBlockExampleController.swift in Sources */,
+				5E0160B22880036000E890FC /* Route.swift in Sources */,
+				5E70EC252858615E00B1A751 /* GroupInfoController.swift in Sources */,
 				5E9A5DAB285455A200CEAC9A /* AlertPresentationContext.swift in Sources */,
 				5E9A5DAD285455C000CEAC9A /* AlertPresentationContext+Default.swift in Sources */,
+				5E0160AE2880036000E890FC /* Router.swift in Sources */,
 				5E9A5DC92854610600CEAC9A /* PushStylePresentExampleController.swift in Sources */,
+				5E0160AD2880036000E890FC /* RoutingPatternToken.swift in Sources */,
 				5E9A5DC82854610600CEAC9A /* AlertCenterExampleController.swift in Sources */,
 				5E1E34FE285337C500F101E6 /* RootViewController.swift in Sources */,
+				5E0160B12880036000E890FC /* RouterManager.swift in Sources */,
 				5E9A5DCC2854610600CEAC9A /* SampleExampleRouter.swift in Sources */,
 				5E9A5DCA2854610600CEAC9A /* SystemPresentExampleController.swift in Sources */,
 				5E9A5DD0285461C400CEAC9A /* BlockExampleRouter.swift in Sources */,
@@ -329,6 +364,7 @@
 				5E9A5D922854373900CEAC9A /* UIApplication+Extension.swift in Sources */,
 				5E9A5D8B285431C000CEAC9A /* JJRouterDestination.swift in Sources */,
 				5E9A5DCE2854618100CEAC9A /* BottomBlockExampleController.swift in Sources */,
+				5E0160AF2880036000E890FC /* Scanner.swift in Sources */,
 				5E9A5DD428546A6900CEAC9A /* PassParametersExampleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

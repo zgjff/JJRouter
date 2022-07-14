@@ -7,16 +7,31 @@
 
 import Foundation
 
-enum BlockExampleRouter: String, CaseIterable, JJRouterSource {
-    case bottomBlock = "/bottomBlock"
-    case passContext = "/passContext"
-    case passParameter = "/app/product/:id"
-    case groupInfo = "/app/info/:id/:name"
+enum BlockExampleRouter: JJRouterSource {
+    case bottomBlock
+    case passContext
+    case passParameter
+    case groupInfo(id: Int, name: String)
+    
+    static func register() {
+//        let items: [BlockExampleRouter] = [BlockExampleRouter.bottomBlock, BlockExampleRouter.passContext, BlockExampleRouter.passParameter, BlockExampleRouter.groupInfo(id: 0, name: "")]
+//        for item in items {
+//            try? item.register()
+//        }
+//        try? BlockExampleRouter.bottomBlock.register()
+        try? BlockExampleRouter.passParameter.register()
+    }
 }
 
 extension BlockExampleRouter {
     var routerPattern: String {
-        return self.rawValue
+        switch self {
+        case .bottomBlock: return "/bottomBlock"
+        case .passContext: return "/passContext"
+        case .passParameter: return "/app/product/:id"
+            // TODO: 参数应该像url一样拼接query
+        case .groupInfo: return "/app/groupInfo/:id/:name"
+        }
     }
 }
 
@@ -41,7 +56,10 @@ extension BlockExampleRouter {
         case .bottomBlock: return BottomBlockExampleController()
         case .passContext: return PassContextBlockExampleController()
         case .passParameter: return PassParametersExampleController()
-        case .groupInfo: return PassParametersExampleController()
+        case let .groupInfo:
+//            print("lllllllll----", block())
+            print("makeRouterDestination---------", self)
+            return GroupInfoController(id: -999, name: "empty")
         }
     }
 }

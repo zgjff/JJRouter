@@ -21,10 +21,10 @@ public class RouterXCore {
 
     public func register(pattern: String) throws {
         let tokens = RoutingPatternScanner.tokenize(pattern)
-
+        print("RouterXCore  register 0: ", tokens)
         guard let prefixToken = tokens.first else { throw PatternRegisterError.empty }
         guard prefixToken == .slash else { throw PatternRegisterError.missingPrefixSlash }
-
+        print("RouterXCore  register 1: ", prefixToken)
         var previousToken: RoutingPatternToken?
         var stackTokensDescription = ""
         var parenthesisOffset = 0
@@ -45,11 +45,15 @@ public class RouterXCore {
             }
             stackTokensDescription.append(token.description)
             previousToken = token
+            print("RouterXCore  register 2: ", token)
         }
 
         guard parenthesisOffset == 0 else {
             throw PatternRegisterError.unbalanceParenthesis
         }
+        print("RouterXCore  register 3: ", previousToken)
+        print("RouterXCore  register 4: ", tokens)
+        print("RouterXCore  register 5: ", pattern)
         try RoutingPatternParser.parseAndAppendTo(self.rootRoute, routingPatternTokens: tokens, patternIdentifier: pattern)
     }
 
@@ -60,24 +64,29 @@ public class RouterXCore {
         if tokens.isEmpty {
             return nil
         }
-
+        print("RouterXCore  match 0: ", tokens)
         var parameters: [String: String] = [:]
 
         var tokensGenerator = tokens.makeIterator()
         var targetRoute: RouteVertex = rootRoute
+//        print("RouterXCore  match 999: ", targetRoute)
+        print("RouterXCore  match 1: ", tokensGenerator)
         while let token = tokensGenerator.next() {
+            print("RouterXCore  match 2: ", token)
             if let determinativeRoute = targetRoute.namedRoutes[token.routeEdge] {
                 targetRoute = determinativeRoute
+                print("RouterXCore  match 3: ", determinativeRoute)
             } else if let epsilonRoute = targetRoute.parameterRoute {
                 targetRoute = epsilonRoute.1
+                print("RouterXCore  match 4: ", epsilonRoute)
                 parameters[epsilonRoute.0] = String(describing: token).removingPercentEncoding ?? ""
             } else {
                 return nil
             }
         }
-
+        print("RouterXCore  match 5: ", targetRoute)
         guard let pathPatternIdentifier = targetRoute.patternIdentifier else { return nil }
-
+        print("RouterXCore  match 6: ", parameters)
         return MatchedRoute(url: url, parameters: parameters, patternIdentifier: pathPatternIdentifier)
     }
 

@@ -93,59 +93,58 @@ public extension AlertPresentationContext.Default {
     }
     
     /// 4个圆角带阴影的presentedViewController view修饰view
-    static var shadowAllRoundedCornerWrappingView: (UIView, CGRect) -> (UIView) = { presentedViewControllerView, frame in
-        let presentationWrapperView = UIView(frame: frame)
-        presentationWrapperView.layer.shadowOpacity = 0.44
-        presentationWrapperView.layer.shadowRadius = 13
-        presentationWrapperView.layer.shadowOffset = CGSize(width: 0, height: -6)
-        
-        let radius: CGFloat = 10
-        
-        let presentationRoundedCornerView = UIView(frame: presentationWrapperView.bounds)
-        presentationRoundedCornerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        presentationRoundedCornerView.layer.cornerRadius = radius
-        presentationRoundedCornerView.layer.masksToBounds = true
-        
-        presentedViewControllerView.frame = presentationRoundedCornerView.bounds
-        
-        presentationRoundedCornerView.addSubview(presentedViewControllerView)
-        
-        presentationWrapperView.addSubview(presentationRoundedCornerView)
-        
-        return presentationWrapperView
+    static var shadowAllRoundedCornerWrappingView: (CGFloat) -> (UIView, CGRect) -> (UIView) = { radius in
+        return { presentedViewControllerView, frame in
+            let presentationWrapperView = UIView(frame: frame)
+            presentationWrapperView.layer.shadowOpacity = 0.44
+            presentationWrapperView.layer.shadowRadius = 13
+            presentationWrapperView.layer.shadowOffset = CGSize(width: 0, height: -6)
+            let presentationRoundedCornerView = UIView(frame: presentationWrapperView.bounds)
+            presentationRoundedCornerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+            presentationRoundedCornerView.layer.cornerRadius = radius
+            presentationRoundedCornerView.layer.masksToBounds = true
+            
+            presentedViewControllerView.frame = presentationRoundedCornerView.bounds
+            
+            presentationRoundedCornerView.addSubview(presentedViewControllerView)
+            
+            presentationWrapperView.addSubview(presentationRoundedCornerView)
+            
+            return presentationWrapperView
+        }
     }
     
     /// 4个圆角不带阴影的presentedViewController view修饰view
-    static var allRoundedCornerWrappingView: (UIView, CGRect) -> (UIView) = { presentedViewControllerView, frame in
-        let radius: CGFloat = 10
-        
-        let presentationRoundedCornerView = UIView(frame: frame)
-        presentationRoundedCornerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        presentationRoundedCornerView.layer.cornerRadius = radius
-        presentationRoundedCornerView.layer.masksToBounds = true
-        
-        presentedViewControllerView.frame = presentationRoundedCornerView.bounds
-        
-        presentationRoundedCornerView.addSubview(presentedViewControllerView)
-        
-        return presentationRoundedCornerView
+    static var allRoundedCornerWrappingView: (CGFloat) -> (UIView, CGRect) -> (UIView) = { radius in
+        return { presentedViewControllerView, frame in
+                let presentationRoundedCornerView = UIView(frame: frame)
+                presentationRoundedCornerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+                presentationRoundedCornerView.layer.cornerRadius = radius
+                presentationRoundedCornerView.layer.masksToBounds = true
+                
+                presentedViewControllerView.frame = presentationRoundedCornerView.bounds
+                
+                presentationRoundedCornerView.addSubview(presentedViewControllerView)
+                
+                return presentationRoundedCornerView
+        }
     }
     
     /// 上部圆角圆角不带阴影的presentedViewController view修饰view
-    static var topRoundedCornerWrappingView: (UIView, CGRect) -> (UIView) = { presentedViewControllerView, frame in
-        let radius: CGFloat = 10
-        
-        let presentationRoundedCornerView = UIView(frame: frame)
-        presentationRoundedCornerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        presentationRoundedCornerView.layer.cornerRadius = radius
-        presentationRoundedCornerView.layer.masksToBounds = true
-        presentationRoundedCornerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        
-        presentedViewControllerView.frame = presentationRoundedCornerView.bounds
+    static var topRoundedCornerWrappingView: (CGFloat) -> (UIView, CGRect) -> (UIView) = { radius in
+        return { presentedViewControllerView, frame in
+                let presentationRoundedCornerView = UIView(frame: frame)
+                presentationRoundedCornerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+                presentationRoundedCornerView.layer.cornerRadius = radius
+                presentationRoundedCornerView.layer.masksToBounds = true
+                presentationRoundedCornerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+                
+                presentedViewControllerView.frame = presentationRoundedCornerView.bounds
 
-        presentationRoundedCornerView.addSubview(presentedViewControllerView)
-        
-        return presentationRoundedCornerView
+                presentationRoundedCornerView.addSubview(presentedViewControllerView)
+                
+                return presentationRoundedCornerView
+        }
     }
     
     /// 无效果的presentedViewController view修饰view

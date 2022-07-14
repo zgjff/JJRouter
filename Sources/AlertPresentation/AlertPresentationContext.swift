@@ -33,7 +33,7 @@ final public class AlertPresentationContext {
     public var frameOfPresentedViewInContainerView: ((_ containerViewBounds: CGRect, _ preferredContentSize: CGSize) -> (CGRect))? = Default.centerFrameOfPresentedView
     
     /// presentingViewController的view修饰view----默认4个圆角带阴影view
-    public var presentationWrappingView: ((_ presentedViewControllerView: UIView, _ frameOfPresentedView: CGRect) -> UIView)? = Default.shadowAllRoundedCornerWrappingView
+    public var presentationWrappingView: ((_ presentedViewControllerView: UIView, _ frameOfPresentedView: CGRect) -> UIView)? = Default.shadowAllRoundedCornerWrappingView(10)
     
     /// presentingViewController的view底部封面view,默认是暗灰色view
     ///

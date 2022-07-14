@@ -39,7 +39,7 @@ extension BottomBlockExampleController: JJRouterDestination {
         let pd = AlertPresentationController(show: self, from: tvc) { ctx in
             ctx.usingClearCoverAnimators()
             ctx.usingBottomPresentation()
-            ctx.presentationWrappingView = AlertPresentationContext.Default.topRoundedCornerWrappingView
+            ctx.presentationWrappingView = AlertPresentationContext.Default.topRoundedCornerWrappingView(10)
         }
         transitioningDelegate = pd
         tvc.present(self, animated: true) {

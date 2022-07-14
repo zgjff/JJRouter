@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     private func registerRouter() {
-        SampleExampleRouter.allCases.forEach { try? $0.register() }
-        BlockExampleRouter.allCases.forEach { try? $0.register() }
-        try? URL(string: "applinks://www.yourApp.com/app")?.register()
+//        SampleExampleRouter.allCases.forEach { try? $0.register() }
+        BlockExampleRouter.register()
+//        try? URL(string: "applinks://www.yourApp.com/app")?.register()
     }
 }

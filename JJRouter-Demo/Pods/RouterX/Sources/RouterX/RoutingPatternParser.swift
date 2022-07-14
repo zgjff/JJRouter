@@ -17,6 +17,7 @@ internal class RoutingPatternParser {
     }
 
     class func parseAndAppendTo(_ rootRoute: RouteVertex, routingPatternTokens: [RoutingPatternToken], patternIdentifier: PatternIdentifier) throws {
+        print("parseAndAppendTo----------")
         let parser = RoutingPatternParser(routingPatternTokens: routingPatternTokens, patternIdentifier: patternIdentifier)
         try parser.parseAndAppendTo(rootRoute)
     }

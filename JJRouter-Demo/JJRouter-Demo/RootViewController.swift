@@ -40,8 +40,10 @@ extension RootViewController {
                 JumpAction(title: "PushStylePresent", sel: "onClickPushStylePresent"),
                 JumpAction(title: "AlertCenter", sel: "onClickAlertCenter"),
                 JumpAction(title: "PassParameters", sel: "onClickPassParameters"),
-                JumpAction(title: "openUrl1", sel: "onClickOpenUrl1"),
-                JumpAction(title: "openUrl2", sel: "onClickOpenUrl2"),
+                JumpAction(title: "openUrl", sel: "onClickOpenUrl"),
+                JumpAction(title: "OpenGroupInfoWithParameters", sel: "onClickOpenGroupInfoWithParameters"),
+                JumpAction(title: "OpenGroupInfoWithUrl1", sel: "onClickOpenGroupInfoWithUrl1"),
+                JumpAction(title: "OpenGroupInfoWithUrl2", sel: "onClickOpenGroupInfoWithUrl2"),
             ]
             self.actions = actions
             DispatchQueue.main.async { [weak self] in
@@ -81,6 +83,10 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
 
 private extension RootViewController {
     @IBAction func onClickJumpPush() {
+        let url = URL(string: "www.youApp.com/app/product/:object/:action")!
+        print("onClickJumpPush: ", url.pathComponents)
+        let c = URLComponents(string: url.absoluteString)
+        print("onClickJumpPush: ", c)
         JJRouter.default.open(SampleExampleRouter.push)
     }
     
@@ -97,10 +103,11 @@ private extension RootViewController {
     }
     
     @IBAction func onClickPassParameters() {
-        JJRouter.default.open("/app/product/2")
+       let r = JJRouter.default.open("/app/product/2")
+        print("onClickPassParameters: ", r)
     }
     
-    @IBAction func onClickOpenUrl1() {
+    @IBAction func onClickOpenUrl() {
         let r = JJRouter.default.open("applinks://www.youApp.com/app/product/10")
         // 这个回调没任何意义,只是为了展示就算跳转不到想要的控制器,而被映射到其它控制器的时候,也可以其它控制器的拿到回调,比如登录成功之后刷新UI
         r?.register(blockName: "onLoginSuccess", callback: { _ in
@@ -108,10 +115,15 @@ private extension RootViewController {
         })
     }
     
-    @IBAction func onClickOpenUrl2() {
-        let url = URL(string: "/photos?user_id=2")
-        print(url, url?.path, url?.query)
-        let r = JJRouter.default.open("/app/aainfo/2/aaa")
-        print(r)
+    @IBAction func onClickOpenGroupInfoWithParameters() {
+        JJRouter.default.open(BlockExampleRouter.groupInfo(id: 999, name: "adfs"))
+    }
+    
+    @IBAction func onClickOpenGroupInfoWithUrl1() {
+        JJRouter.default.open("/app/groupInfo/88/play")
+    }
+    
+    @IBAction func onClickOpenGroupInfoWithUrl2() {
+        JJRouter.default.open("/app/web/product?id=123&group=game")
     }
 }
